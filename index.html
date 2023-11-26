@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">John Doe</div>
+      <div>
+        <ul class="nav__link">
+          <li class="nav__link--item">
+            <a href="#about">About</a>
+          </li>
+          <li class="nav__link--item">
+            <a href="#experience">Experience</a>
+          </li>
+          <li class="nav__link--item">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="nav__link--item">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">John Doe</div>
+      <div class="hamburger__menu">
+        <div class="hamburger__icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu__links">
+          <li class="nav__link--item">
+            <a href="#about" onclick="toggleMenu()">About</a>
+          </li>
+          <li class="nav__link--item">
+            <a href="#experience" onclick="toggleMenu()">Experience</a>
+          </li>
+          <li class="nav__link--item">
+            <a href="#projects" onclick="toggleMenu()">Projects</a>
+          </li>
+          <li class="nav__link--item" onclick="toggleMenu()">
+            <a href="#contact">Contact</a>
+          </li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="john doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text--p1">Hello, I'm</p>
+        <h1 class="title">John Doe</h1>
+        <p class="section__text--p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="social-container">
+          <img
+            class="linkedin-icon"
+            src="./assets/linkedin.png"
+            alt="My LinkedIn Profile"
+            onclick="location.href='https://github.com/makawy7'"
+          />
+          <img
+            class="github-icon"
+            src="./assets/github.png"
+            alt="My LinkedIn Profile"
+            onclick="location.href='https://github.com/makawy7'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="about-head">
+        <p class="section__text--p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+      </div>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            class="about-pic"
+            src="./assets/about-pic.png"
+            alt="profile picture"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-containers">
+              <img
+                class="icon"
+                src="./assets/experience.png"
+                alt="experience icon"
+              />
+              <h3>Experience</h3>
+              <p>
+                2+ years <br />
+                Frontend Developer
+              </p>
+            </div>
+            <div class="details-containers">
+              <img
+                class="icon"
+                src="./assets/education.png"
+                alt="education icon"
+              />
+              <h3>Education</h3>
+              <p>
+                B.Sc. Bachelors Degree <br />
+                M.Sc. Masters Degree
+              </p>
+            </div>
+          </div>
+          <div class="text-conainer">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+              deleniti est vitae beatae iste possimus ad suscipit aspernatur
+              pariatur, eveniet fugiat, modi quis voluptas temporibus alias
+              quibusdam fuga architecto placeat.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        class="icon arrow"
+        src="./assets/arrow.png"
+        alt="arrow icon"
+        onclick="location.href='#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text--p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-containers">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  class="icon"
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                />
+                <div>
+                  <h3>SASS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-containers">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  class="icon"
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        class="icon arrow"
+        src="./assets/arrow.png"
+        alt="arrow icon"
+        onclick="location.href='#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text--p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="projects-container">
+        <div class="project-container">
+          <img src="./assets/project-1.png" alt="project 1" />
+          <h2>Project One</h2>
+          <div class="project-links">
+            <a href="https://github.com/makawy7">Github</a>
+            <a href="https://github.com/makawy7">Live Demo</a>
+          </div>
+        </div>
+        <div class="project-container">
+          <img src="./assets/project-2.png" alt="project 2" />
+          <h2>Project Two</h2>
+          <div class="project-links">
+            <a href="https://github.com/makawy7">Github</a>
+            <a href="https://github.com/makawy7">Live Demo</a>
+          </div>
+        </div>
+        <div class="project-container">
+          <img src="./assets/project-3.png" alt="project 3" />
+          <h2>Project Three</h2>
+          <div class="project-links">
+            <a href="https://github.com/makawy7">Github</a>
+            <a href="https://github.com/makawy7">Live Demo</a>
+          </div>
+        </div>
+      </div>
+      <img
+        class="icon arrow"
+        src="./assets/arrow.png"
+        alt="arrow icon"
+        onclick="location.href='#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text--p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contacts">
+        <div class="contact-container">
+          <div class="contact-email">
+            <img class="icon" src="./assets/email.png" alt="email" />
+            <p>Example@gmail.com</p>
+          </div>
+          <div class="contact-linkedin">
+            <img class="icon" src="./assets/linkedin.png" alt="linkedin" />
+            <p>LinkedIn</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav__link">
+            <li class="nav__link--item">
+              <a href="#about">About</a>
+            </li>
+            <li class="nav__link--item">
+              <a href="#experience">Experience</a>
+            </li>
+            <li class="nav__link--item">
+              <a href="#projects">Projects</a>
+            </li>
+            <li class="nav__link--item">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright © 2023 John Doe. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
