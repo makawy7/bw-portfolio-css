@@ -149,7 +149,6 @@ section#profile {
   justify-content: center;
   align-items: center;
   gap: 5rem;
-  height: 80vh;
 }
 
 .section__pic-container {
@@ -167,6 +166,7 @@ section#profile {
 
 .section__text p {
   font-weight: 600;
+  text-align: center;
 }
 
 .section__text--p2 {
@@ -234,7 +234,6 @@ section#profile {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10rem;
 }
 
 #about .about-head {
@@ -246,12 +245,14 @@ section#profile {
 }
 
 #about .section-container {
+  margin-top: 1rem;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 4rem;
 }
 
-#about .section__pic-container {
+.section__pic-container {
   width: 400px;
   height: 400px;
   margin: auto 0;
@@ -354,20 +355,22 @@ section#profile {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
   gap: 2rem;
   margin-top: 2rem;
 }
 
 .project-container img {
-  width: 100%;
-  height: 100%;
+  width: 95%;
+  height: 95%;
   border-radius: 2rem;
   margin-bottom: 0.5rem;
 }
 
 .project-container {
+  flex: 1;
   text-align: center;
-  padding: 1.5rem 3rem;
+  padding: 1.5rem 2rem;
   border-radius: 2rem;
   border: rgb(163, 163, 163) 0.1rem solid;
   background: rgb(250, 250, 250);
@@ -387,11 +390,11 @@ section#profile {
 .project-links a {
   text-decoration: none;
   font-size: 0.85rem;
-  width: 8rem;
+  width: 6.5rem;
   border-radius: 2rem;
   background: rgb(250, 250, 250);
   transform: all 600ms ease;
-  padding: 0.75rem 0.1rem;
+  padding: 0.75rem 0.5rem;
   border: rgb(163, 163, 163) 0.1rem solid;
   font-weight: 500;
   cursor: pointer;
@@ -449,7 +452,8 @@ section#profile {
 
 footer {
   height: 26vh;
-  margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 footer p {
